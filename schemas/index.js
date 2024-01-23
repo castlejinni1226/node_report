@@ -1,12 +1,11 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 dotenv.config();
 
 import mongoose from "mongoose";
 
 const connect = () => {
   mongoose
-    .connect(
-      process.env.mongodb_API,
+    .connect(process.env.MONGO_API,
       {
         dbName: "node_lv1",
       },

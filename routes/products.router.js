@@ -11,7 +11,7 @@ router.post("/products", async (req, res) => {
   const status = "FOR_SALE";
   const createAt = new Date();
 
-  if (!title || !content || !author || !password) {
+  if (!title || !content || !author || !password) { 
     return res
       .status(400)
       .json({ errorMessage: "데이터 형식이 올바르지 않습니다." });
